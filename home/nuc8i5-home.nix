@@ -20,7 +20,7 @@
 
     # set some aliases, feel free to add more or remove some
     shellAliases = {
-      up-nix="./.nixos-update";
+      up-git="./.nixos-update-github";
     };
   };
 

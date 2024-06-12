@@ -61,15 +61,20 @@ toshiba l300  (Intel 585), ram 4G
   # ......
 }
 ```
-### After making these changes, run
+### After making these changes, run:
 ```console
 sudo nixos-rebuild switch
 reboot
 ```
 
+### Clone nixos-config:
+```console
+git clone https://github.com/japohjas/nixos-config.git
+```
+
 ### Copy files:
 ```console
-cp /etc/nixos/*.nix  ~/.nixos-config/hosts/<pc-name>
+cp /etc/nixos/*.nix  ~/nixos-config/hosts/<pc-name>
 ```
 
 ### Please check the following:

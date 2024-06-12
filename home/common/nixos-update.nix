@@ -6,10 +6,12 @@
       echo "NixOS full päivitys käynnistetty..."
       echo ""
 
-      echo "git pull ~/nixos-config"
-      git pull ~/nixos-config
-      echo "git clean -dfx ~/nixos-config"
-      git clean -dfx ~/nixos-config
+      cd ~/nixos-config
+      echo "~/nixos-config/git pull"
+      git pull
+      echo "~/nixos-config/git clean -dfx"
+      git clean -dfx
+      cd ..
       echo ""
 
       echo "nix flake update ~/nixos-config"

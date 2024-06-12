@@ -17,7 +17,7 @@
       echo "nix flake update ~/nixos-config"
       nix flake update ~/nixos-config
 
-      echo "nixos-rebuild switch --flake c"
+      echo "nixos-rebuild switch --flake"
       sudo nixos-rebuild switch --flake ~/nixos-config
   
       echo "sudo -k"

@@ -4,9 +4,9 @@ Flakes +
 Home Manager as a module of NixOS
 
 Computers:
-nuc8i5  (Intel i5-8259U), ram 32G
-acer aspire-v3  (Intel i3-3110m), ram 16G
-toshiba l300  (Intel 585), ram 4G
+nuc8i5  (Intel i5-8259U, ram 32G)
+acer-v3  (Intel i3-3110m, ram 16G)
+toshiba-l300  (Intel 585, ram 4G)
 
 ```
 ### Install NixOS (Gnome, 64-bit Intel/AMD)

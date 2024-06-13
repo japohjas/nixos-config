@@ -1,6 +1,8 @@
 ## MY personal NixOS Configuration.
 ```htm
-Flakes +
+My personal NixOS flake places the configuration in
+~/nixos-config
+
 Home Manager as a module of NixOS
 
 Computers:
@@ -11,8 +13,6 @@ toshiba-l300  (Intel 585, ram 4G)
 ```
 ### Install NixOS (Gnome, 64-bit Intel/AMD)
 ### [NixOS download](https://nixos.org/download/)
-
-### My personal NixOS flake places the configuration in ~/nixos-config
 
 ### Manually modify the /etc/nixos/configuration.nix
 ```htm

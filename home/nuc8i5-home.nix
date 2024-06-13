@@ -4,6 +4,7 @@
   imports = [
     ./programs/pkgs.nix
     ./common/nixos-update.nix
+    ./common/nixos-update-github.nix
   ];
 
   home.username = "jari";

@@ -1,4 +1,4 @@
-{ config, pkgs, ...}: 
+{ config, pkgs, ... }: 
 
 {
   imports = [
@@ -15,9 +15,11 @@
     pipx      # pipx install yle-dl
     btop      # replacement of htop/nmon
     
-    keepassxc
-    chromium
     firefox
+    chromium
+
+    keepassxc
+    
     gimp-with-plugins
     gthumb
     digikam

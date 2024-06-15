@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: 
+{ pkgs, ... }: 
 
 {
   imports = [
@@ -17,8 +17,6 @@
     
     firefox
     chromium
-
-    keepassxc
     
     gimp-with-plugins
     gthumb

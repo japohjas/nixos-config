@@ -1,7 +1,7 @@
 { config, ... }:
 
 {
-  home.file.".nixos-update" = {
+  home.file.".nixos-flake-update" = {
     text = ''
       echo "NixOS flake + full päivitys käynnistetty..."
       echo ""

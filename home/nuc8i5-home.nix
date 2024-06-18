@@ -5,6 +5,7 @@
     ./programs/pkgs.nix
     ./common/nixos-update.nix
     ./common/nixos-update-github.nix
+    ./common/nixos-flake-update.nix
   ];
 
   home.username = "jari";

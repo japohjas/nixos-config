@@ -25,7 +25,7 @@
       pipx upgrade yle-dl
       echo ""
 
-      echo "Päivitä github" 
+      echo "Synkronoi github" 
       echo "Viimeistele päivitys käynnistämällä kone uudestaan."
     '';
     executable = true;

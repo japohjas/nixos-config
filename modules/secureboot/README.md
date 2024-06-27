@@ -64,6 +64,5 @@ System:
 
 ```
 
-### Thank you:
 ### [Quick Start: NixOS Secure Boot](https://github.com/nix-community/lanzaboote/blob/master/docs/QUICK_START.md)
 

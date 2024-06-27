@@ -113,5 +113,4 @@ modules/securboot/README.md
 ```
 
 
-### Thank you:
 ### [NixOS & Flakes Book. An unofficial book for beginners](https://nixos-and-flakes.thiscute.world/)

@@ -29,11 +29,12 @@
     };
   };
 
+  # xfce calendar
+  # calendar:indeterminate {color: gray; }
   home.file.".config/gtk-3.0/gtk.css" = {
     text = ''
-      calendar { font.size: 12pt; padding: 5px; margin: 5px; }
+      calendar { font.size: 16pt; padding: 5px; margin: 5px; }
       calendar.highlight {background-color: gray;}
-      calendar:indeterminate {color: gray; }
     '';
     recursive = true;
   };  

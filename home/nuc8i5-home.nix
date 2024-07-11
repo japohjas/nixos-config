@@ -3,6 +3,10 @@
 {
   imports = [
     ./programs/pkgs.nix
+    ./programs/pkgs-gnome.nix
+    ./programs/pkgs-photo.nix
+    ./programs/conky
+    ./programs/celluloid
     ./common/nixos-update.nix
     ./common/nixos-update-github.nix
     ./common/nixos-flake-update.nix

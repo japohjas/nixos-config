@@ -1,11 +1,6 @@
 { pkgs, ... }: 
 
 {
-  imports = [
-    ./conky
-    ./celluloid
-  ];
-  
   home.packages = (with pkgs; [ 
     neofetch
     nnn      	# terminal file manager
@@ -38,10 +33,18 @@
     # font-awesome      # Icons
 
     papirus-icon-theme
-
-    gnome.gnome-tweaks  # theming
-  ]) ++ (with pkgs.gnomeExtensions; [
-    dash-to-panel
-    arcmenu
   ]);
+
+  # flatpak apps
+  # org.videolan.VLC
+  # org.kde.kaffeine
+  # com.github.unrud.VideoDownloader
+  #
+  # org.libreoffice.LibreOffice
+  # org.libreoffice.LibreOffice.BundledExtension.Voikko
+  #
+  # com.google.Chrome
+  # org.keepassxc.KeePassXC
+  #
+  # com.visualstudio.code
 }

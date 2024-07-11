@@ -67,7 +67,7 @@ sudo nixos-rebuild switch
 reboot
 ```
 
-### Copy files: configuration.nix and hardware-configuration.nix to https://github.com/japohjas/nixos-config
+#### Copy files: configuration.nix and hardware-configuration.nix to https://github.com/japohjas/nixos-config
 
 
 ### Clone nixos-config:

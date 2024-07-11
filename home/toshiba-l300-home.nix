@@ -31,10 +31,10 @@
 
   # xfce calendar
   # calendar:indeterminate {color: gray; }
+  # calendar.highlight { backg round-color: gray; }
   home.file.".config/gtk-3.0/gtk.css" = {
     text = ''
-      calendar { font.size: 16pt; padding: 5px; margin: 5px; }
-      calendar.highlight {background-color: gray;}
+      calendar { font.size: 18pt; padding: 5px; margin: 5px; }
     '';
     recursive = true;
   };  

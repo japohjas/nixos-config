@@ -29,6 +29,15 @@
     };
   };
 
+  home.file.".config/gtk-3.0/gtk.css" = {
+    text = ''
+      calendar { font.size: 12pt; padding: 5px; margin: 5px; }
+      calendar.highlight {background-color: gray;}
+      calendar:indeterminate {color: gray; }
+    '';
+    recursive = true;
+  };  
+
   # You can update home Manager without changing this value. See
   # the home Manager release notes for a list of state version
   # changes in each release.

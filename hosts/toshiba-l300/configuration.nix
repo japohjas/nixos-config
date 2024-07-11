@@ -123,6 +123,7 @@
     git
 
     xfce.xfce4-whiskermenu-plugin
+    xfce.xfce4-pulseaudio-plugin
   ];
 
   # flatpak setup

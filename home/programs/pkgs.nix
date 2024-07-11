@@ -13,12 +13,6 @@
     firefox
     chromium
     
-    gimp-with-plugins
-    gthumb
-    digikam
-    exiftool
-    rawtherapee
-    
     # system tools
     pciutils  # lspci
     usbutils  # lsusb

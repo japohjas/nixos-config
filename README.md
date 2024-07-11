@@ -11,7 +11,7 @@ acer-v3  (Intel i3-3110m, ram 16G)
 toshiba-l300  (Intel 585, ram 4G)
 
 ```
-### Install NixOS (Gnome, 64-bit Intel/AMD)
+### Install NixOS (Gnome, Xfce4, 64-bit Intel/AMD)
 ### [NixOS download](https://nixos.org/download/)
 
 ### Manually modify the /etc/nixos/configuration.nix
@@ -67,14 +67,12 @@ sudo nixos-rebuild switch
 reboot
 ```
 
+### Copy files: configuration.nix and hardware-configuration.nix to https://github.com/japohjas/nixos-config
+
+
 ### Clone nixos-config:
 ```console
 git clone https://github.com/japohjas/nixos-config.git
-```
-
-### Copy files:
-```console
-cp /etc/nixos/*.nix  ~/nixos-config/hosts/<pc-name>
 ```
 
 ### Please check the following:

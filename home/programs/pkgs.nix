@@ -1,7 +1,7 @@
 { pkgs, ... }: 
 
 {
-  home.packages = (with pkgs; [ 
+  home.packages = with pkgs; [ 
     neofetch
     nnn      	# terminal file manager
     w_scan
@@ -27,7 +27,7 @@
     # font-awesome      # Icons
 
     papirus-icon-theme
-  ]);
+  ];
 
   # flatpak apps
   # org.videolan.VLC

@@ -9,8 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
-  
-  # noatime - do not update inode access times on the filesystem. Can help performance.
+
   fileSystems."/" = { 
     options = [ "noatime" ];
   };
@@ -18,7 +17,7 @@
   # Bootloader.
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/sda";
-  # boot.loader.grub.useOSProber = true;
+  boot.loader.grub.useOSProber = true;
   boot.loader.grub.configurationLimit = 5;
   boot.loader.timeout = 3;
 
@@ -29,7 +28,7 @@
 
   boot.loader.grub.enableCryptodisk=true;
 
-  boot.initrd.luks.devices."luks-dbe97a83-7c13-4438-b3db-86e2a36a4d60".keyFile = "/crypto_keyfile.bin";
+  boot.initrd.luks.devices."luks-a1793dfa-3022-48e7-b360-d3bae2b02d87".keyFile = "/crypto_keyfile.bin";
   networking.hostName = "toshiba-l300"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -61,9 +60,9 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  # Enable the XFCE Desktop Environment.
+  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.desktopManager.xfce.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -122,7 +121,15 @@
     wget
     curl
     git
+
+    xfce.xfce4-whiskermenu-plugin
   ];
+
+  # flatpak setup
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  };
 
   # Set the default editor to vim
   environment.variables.EDITOR = "vim";
@@ -136,11 +143,11 @@
   # };
 
   # List services that you want to enable:
-  services.fstrim.enable = true;
-  services.flatpak.enable = true;
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
+  services.fstrim.enable = true;
+  services.flatpak.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

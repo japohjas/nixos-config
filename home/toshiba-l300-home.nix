@@ -47,7 +47,6 @@
     fade=1;
     gamma=0.8;
     provider = "manual";
-    method=randr; # x11 method
     latitude = 60.2;
     longitude = 24.9;
   };

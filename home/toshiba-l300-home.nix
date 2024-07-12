@@ -42,8 +42,10 @@
   # adjustment-method=wayland
   services.gammastep = {
     enable = true;
-    temp-day=6000;
-    temp-night=5000;
+    temperature = {
+      day = 6000;
+      night = 5000;
+    };
     provider = "manual";
     latitude = 60.2;
     longitude = 24.9;

@@ -65,8 +65,8 @@
         ; Keep in mind that longitudes west of Greenwich (e.g. the Americas)
         ; are negative numbers.
         [manual]
-        lat=60.19
-        lon=24.93
+        lat=60.2
+        lon=24.9
 
         ; Configuration of the adjustment-method
         ; type 'gammastep -m METHOD:help' to see the settings.

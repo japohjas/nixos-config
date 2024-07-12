@@ -40,18 +40,6 @@
     recursive = true;
   };  
 
-  # gammastep/ redshift
-  services.redshift = {
-    enable = true;
-    temperature = {
-      day = 6000;
-      night = 5000;
-    };
-    provider = "manual";
-    latitude = 60.2;
-    longitude = 24.9;
-  };
-
   # You can update home Manager without changing this value. See
   # the home Manager release notes for a list of state version
   # changes in each release.

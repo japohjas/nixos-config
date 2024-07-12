@@ -5,6 +5,7 @@
     ./programs/pkgs.nix
     ./programs/pkgs-xfce.nix
     ./programs/conky
+    ./programs/gammastep
     ./programs/celluloid
     ./common/nixos-update.nix
     ./common/nixos-update-github.nix

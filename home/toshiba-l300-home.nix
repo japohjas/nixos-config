@@ -39,6 +39,19 @@
     recursive = true;
   };  
 
+  # adjustment-method=wayland
+  services.gammastep = {
+    enable = true;
+    temp-day=6000;
+    temp-night=5000;
+    fade=1;
+    gamma=0.8;
+    provider = "manual";
+    adjustment-method=randr; # x11 method
+    latitude = 60.2;
+    longitude = 24.9;
+  };
+
   # You can update home Manager without changing this value. See
   # the home Manager release notes for a list of state version
   # changes in each release.

@@ -39,8 +39,8 @@
     recursive = true;
   };  
 
-  # adjustment-method=wayland
-  services.gammastep = {
+  # gammastep/ redshift
+  services.redshift = {
     enable = true;
     temperature = {
       day = 6000;

@@ -3,10 +3,10 @@
 {
   imports = [
     ./configuration.nix
-    # ../base/gpu-intel.nix
-    ../base/zram.nix
-    ../base/swapfile.nix
-    ../base/store-cleaning.nix
+    # ../../modules/gpu-intel.nix
+    ../../modules/zram.nix
+    ../../modules/store-cleaning.nix
+    ../../modules/swapfile.nix
   ];
 
   # intel 13-3110m - Ivy Bridge - Q2'12 - intel HD Graphics 4000 - 3rd generation

@@ -12,6 +12,9 @@
     
     firefox
     chromium
+
+    vlc
+    kaffeine
     
     # system tools
     pciutils  # lspci
@@ -30,8 +33,7 @@
   ];
 
   # flatpak apps
-  # org.videolan.VLC
-  # org.kde.kaffeine
+  #
   # com.github.unrud.VideoDownloader
   #
   # org.libreoffice.LibreOffice

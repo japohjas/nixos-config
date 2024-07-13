@@ -122,6 +122,7 @@
     curl
     git
 
+    gnome.gnome-keyring # store secrets, passwords, keys, certificates and make them available to applications
     xfce.xfce4-whiskermenu-plugin
     xfce.xfce4-pulseaudio-plugin
     pavucontrol # PulseAudio Volume Control

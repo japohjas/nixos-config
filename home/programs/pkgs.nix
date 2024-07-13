@@ -6,7 +6,7 @@
     nnn      	# terminal file manager
     w_scan
     libreelec-dvb-firmware
-    ffmpeg_4
+    ffmpeg-full
     pipx      # pipx install yle-dl
     btop      # replacement of htop/nmon
     

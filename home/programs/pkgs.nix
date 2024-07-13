@@ -4,7 +4,7 @@
   home.packages = with pkgs; [ 
     neofetch
     nnn      	# terminal file manager
-    w_scan
+    w_scan    # vlc, w_scan -ft -c fi -L > dvb.xspf
     libreelec-dvb-firmware
     ffmpeg-full
     pipx      # pipx install yle-dl
@@ -13,9 +13,6 @@
     firefox
     chromium
 
-    vlc
-    kaffeine
-    
     # system tools
     pciutils  # lspci
     usbutils  # lsusb
@@ -34,6 +31,8 @@
 
   # flatpak apps
   #
+  # org.videolan.VLC # vaapi toimii, nixos paketissa ei toimi
+  # org.kde.kaffeine 
   # com.github.unrud.VideoDownloader
   #
   # org.libreoffice.LibreOffice

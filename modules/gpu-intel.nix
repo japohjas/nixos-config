@@ -4,6 +4,10 @@
   boot.initrd.kernelModules = [ "i915" ];
 
   # https://wiki.nixos.org/wiki/Accelerated_Video_Playback
+  nixpkgs.config.packageOverrides = pkgs: {
+    intel-vaapi-driver = pkgs.intel-vaapi-driver.override { enableHybridCodec = true; };
+  };
+
   hardware.opengl = {
     enable = true;
     extraPackages = with pkgs; [

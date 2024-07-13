@@ -6,7 +6,7 @@
     nnn      	# terminal file manager
     w_scan
     libreelec-dvb-firmware
-    ffmpeg-full
+    ffmpeg
     pipx      # pipx install yle-dl
     btop      # replacement of htop/nmon
     
@@ -14,7 +14,6 @@
     chromium
 
     vlc
-    libvlc
     kaffeine
     
     # system tools

@@ -14,6 +14,7 @@
     chromium
 
     vlc
+    libvlc
     kaffeine
     
     # system tools

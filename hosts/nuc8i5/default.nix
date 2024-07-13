@@ -3,7 +3,7 @@
 {
     imports = [
       ./configuration.nix
-      ../../modules/gpu-intel.nix
+      # ../../modules/gpu-intel.nix
       ../../modules/zram.nix
       ../../modules/store-cleaning.nix
       ../../modules/second-hd-nuc8i5.nix
@@ -19,7 +19,7 @@
   #];
 
   # Force intel-media-driver
-  environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; };
+  # environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; };
 
   # Linux thermal daemon monitors and controls temperature in laptops, 
   # tablets PC with the latest Intel sandy bridge (Q3'11 2nd generation) and latest Intel CPU releases.

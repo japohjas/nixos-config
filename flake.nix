@@ -14,14 +14,14 @@
        inputs.nixpkgs.follows = "nixpkgs";
      };
 
-     # nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
   outputs = inputs@ { 
     nixpkgs,
     home-manager,
     lanzaboote,
-    # nixos-hardware,
+    nixos-hardware,
     ...
   }:
 
@@ -35,7 +35,7 @@
         inherit system;
         modules = [
           lanzaboote.nixosModules.lanzaboote
-          # nixos-hardware.nixosModules.intel-nuc-8i7beh
+          nixos-hardware.nixosModules.common-cpu-intel
           ./hosts/nuc8i5
           ./modules/secureboot
           
@@ -53,8 +53,7 @@
       toshiba-l300 = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
-          # lanzaboote.nixosModules.lanzaboote
-          # ./nixos/secureboot
+          nixos-hardware.nixosModules.common-cpu-intel
           ./hosts/toshiba-l300
           
           home-manager.nixosModules.home-manager
@@ -70,7 +69,7 @@
         inherit system;
         modules = [
           # lanzaboote.nixosModules.lanzaboote
-          # ./nixos/secureboot
+          # ./modules/secureboot
           ./hosts/acer-v3
         
           home-manager.nixosModules.home-manager

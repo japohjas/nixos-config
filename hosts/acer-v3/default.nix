@@ -3,7 +3,7 @@
 {
   imports = [
     ./configuration.nix
-    ../base/gpu-intel.nix
+    # ../base/gpu-intel.nix
     ../base/zram.nix
     ../base/swapfile.nix
     ../base/store-cleaning.nix
@@ -15,7 +15,7 @@
 
   # You can test your configuration by running: nix-shell -p libva-utils --run vainfo
   # Force intel-vaapi-driver
-  environment.sessionVariables = { LIBVA_DRIVER_NAME = "i965"; };
+  # environment.sessionVariables = { LIBVA_DRIVER_NAME = "i965"; };
 
   # Linux thermal daemon monitors and controls temperature in laptops, 
   # tablets PC with the latest Intel sandy bridge (Q3'11 2nd generation) and latest Intel CPU releases.

@@ -3,7 +3,7 @@
 {
   imports = [
     ./configuration.nix
-    ../../modules/gpu-intel.nix
+    # ../../modules/gpu-intel.nix
     ../../modules/zram.nix
     ../../modules/store-cleaning.nix
     ../../modules/swapfile.nix
@@ -15,5 +15,5 @@
 
   # You can test your configuration by running: nix-shell -p libva-utils --run vainfo
   # Force intel-vaapi-driver
-  environment.sessionVariables = { LIBVA_DRIVER_NAME = "i965"; };
+  # environment.sessionVariables = { LIBVA_DRIVER_NAME = "i965"; };
 }

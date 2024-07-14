@@ -49,11 +49,12 @@
     text = ''
       hwdec=auto
       slang=fin,en
-      alang=fi,en
+      alang=fin,en
       save-position-on-quit
+      [big-cache]
       cache=yes
-      demuxer-max-bytes=128M
-      demuxer-max-back-bytes=64M
+      demuxer-max-bytes=512MiB
+      demuxer-readahead-secs=20
     '';
     recursive = true;
   };

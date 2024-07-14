@@ -47,7 +47,7 @@
   # mpv.conf to x11
   home.file.".config/mpv/mpv.conf" = {
     text = ''
-      c
+      hwdec=auto
       slang=fin,en
       alang=fi,en
       save-position-on-quit

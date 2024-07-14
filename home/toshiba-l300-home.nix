@@ -6,7 +6,7 @@
     ./programs/pkgs-xfce.nix
     ./programs/conky
     ./programs/gammastep
-    ./programs/celluloid
+    # ./programs/celluloid
     ./common/nixos-update.nix
     ./common/nixos-update-github.nix
   ];
@@ -38,7 +38,37 @@
       calendar { font.size: 18pt; padding: 5px; margin: 5px; }
     '';
     recursive = true;
-  };  
+  };
+
+  home.packages = [
+    pkgs.celluloid
+  ];
+
+  # mpv.conf to x11
+  home.file.".config/mpv/mpv.conf" = {
+    text = ''
+      hwdec=auto-safe
+      vo=gpu
+      profile=gpu-hq
+      slang=fin,en
+      save-position-on-quit
+      cache=yes
+      demuxer-max-bytes=500M
+      demuxer-max-back-bytes=100M
+    '';
+    recursive = true;
+  };
+
+  home.file.".config/mpv/input.conf" = {
+    text = ''
+      MOUSE_BTN3	add speed +0.1
+      MOUSE_BTN4	add speed -0.1
+
+      UP	  add volume 5
+      DOWN	add volume -5
+    '';
+    recursive = true;
+  };
 
   # You can update home Manager without changing this value. See
   # the home Manager release notes for a list of state version

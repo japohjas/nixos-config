@@ -1,7 +1,7 @@
 { config, pkgs, ... }: 
 
 {
-  # Simple GTK frontend for the mpv video player
+  # Simple GTK frontend for the mpv video player, wayland
   home.packages = [
     pkgs.celluloid
   ];

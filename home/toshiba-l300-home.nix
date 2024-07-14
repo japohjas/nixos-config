@@ -47,7 +47,7 @@
   # mpv.conf to x11
   home.file.".config/mpv/mpv.conf" = {
     text = ''
-      hwdec=auto-safe
+      hwdec=auto
       vo=gpu
       profile=gpu-hq
       slang=fin,en

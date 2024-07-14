@@ -51,10 +51,11 @@
       vo=gpu
       profile=gpu-hq
       slang=fin,en
+      alang=fi,en
       save-position-on-quit
       cache=yes
-      demuxer-max-bytes=500M
-      demuxer-max-back-bytes=100M
+      demuxer-max-bytes=128M
+      demuxer-max-back-bytes=64M
     '';
     recursive = true;
   };

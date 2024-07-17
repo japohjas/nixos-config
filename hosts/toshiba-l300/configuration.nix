@@ -130,15 +130,15 @@
 
   # xdg desktop integration
   # A portal frontend service for Flatpak and other desktop containment frameworks.
-  xdg = {
-    portal = {
-      enable = true;
-      extraPortals = with pkgs; [
-        xdg-desktop-portal-wlr
-        xdg-desktop-portal-gtk
-      ];
-    };
-  };
+  # xdg = {
+  #   portal = {
+  #     enable = true;
+  #     extraPortals = with pkgs; [
+  #       xdg-desktop-portal-wlr
+  #       xdg-desktop-portal-gtk
+  #     ];
+  #   };
+  # };
 
   # Set the default editor to vim
   environment.variables.EDITOR = "vim";
@@ -157,6 +157,8 @@
   # services.openssh.enable = true;
   services.fstrim.enable = true;
   services.flatpak.enable = true;
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  xdg.portal.config.common.default = "gtk";
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

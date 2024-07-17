@@ -157,8 +157,19 @@
   # services.openssh.enable = true;
   services.fstrim.enable = true;
   services.flatpak.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-  xdg.portal.config.common.default = "gtk";
+  
+  # xdg desktop integration
+  # A portal frontend service for Flatpak and other desktop containment frameworks.
+  xdg = {
+    portal = {
+      enable = true;
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-gtk
+        xdg-desktop-portal-wlr
+      ];
+      config.common.default = "gtk";
+    };
+  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

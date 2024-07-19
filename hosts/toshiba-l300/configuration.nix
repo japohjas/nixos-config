@@ -128,18 +128,6 @@
     pavucontrol # PulseAudio Volume Control
   ];
 
-  # xdg desktop integration
-  # A portal frontend service for Flatpak and other desktop containment frameworks.
-  # xdg = {
-  #   portal = {
-  #     enable = true;
-  #     extraPortals = with pkgs; [
-  #       xdg-desktop-portal-wlr
-  #       xdg-desktop-portal-gtk
-  #     ];
-  #   };
-  # };
-
   # Set the default editor to vim
   environment.variables.EDITOR = "vim";
 

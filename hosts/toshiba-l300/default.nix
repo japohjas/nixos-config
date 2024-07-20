@@ -14,6 +14,6 @@
   zramSwap = { memoryPercent = lib.mkForce 100; };
 
   # You can test your configuration by running: nix-shell -p libva-utils --run vainfo
-  # Force intel-vaapi-driver
-  environment.sessionVariables = { LIBVA_DRIVER_NAME = "i965"; };
+  # Force intel-vaapi-driver - switch to nixos-hardware.nixosModules.common-cpu-intel
+  # environment.sessionVariables = { LIBVA_DRIVER_NAME = "i965"; };
 }

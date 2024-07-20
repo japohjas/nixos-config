@@ -18,8 +18,8 @@
   #  pkgs.intel-media-driver # LIBVA_DRIVER_NAME=iHD
   #];
 
-  # Force intel-media-driver
-  environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; };
+  # Force intel-media-driver - switch to nixos-hardware.nixosModules.common-cpu-intel
+  # environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; };
 
   # Linux thermal daemon monitors and controls temperature in laptops, 
   # tablets PC with the latest Intel sandy bridge (Q3'11 2nd generation) and latest Intel CPU releases.

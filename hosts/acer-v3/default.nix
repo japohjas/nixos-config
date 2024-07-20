@@ -14,8 +14,8 @@
   # zramSwap = { memoryPercent = lib.mkForce 60; };
 
   # You can test your configuration by running: nix-shell -p libva-utils --run vainfo
-  # Force intel-vaapi-driver
-  environment.sessionVariables = { LIBVA_DRIVER_NAME = "i965"; };
+  # Force intel-vaapi-driver - switch to nixos-hardware.nixosModules.common-cpu-intel
+  # environment.sessionVariables = { LIBVA_DRIVER_NAME = "i965"; };
 
   # Linux thermal daemon monitors and controls temperature in laptops, 
   # tablets PC with the latest Intel sandy bridge (Q3'11 2nd generation) and latest Intel CPU releases.

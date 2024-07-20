@@ -11,11 +11,11 @@
 
   # intel 13-3110m - Ivy Bridge - Q2'12 - intel HD Graphics 4000 - 3rd generation
   # ram 16 G
-  zramSwap = { memoryPercent = lib.mkDefault 60; };
+  # zramSwap = { memoryPercent = lib.mkForce 60; };
 
   # You can test your configuration by running: nix-shell -p libva-utils --run vainfo
   # Force intel-vaapi-driver
-  # environment.sessionVariables = { LIBVA_DRIVER_NAME = "i965"; };
+  environment.sessionVariables = { LIBVA_DRIVER_NAME = "i965"; };
 
   # Linux thermal daemon monitors and controls temperature in laptops, 
   # tablets PC with the latest Intel sandy bridge (Q3'11 2nd generation) and latest Intel CPU releases.

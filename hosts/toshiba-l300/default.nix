@@ -11,9 +11,9 @@
 
   # intel 585 - Merom - Q3'08 
   # ram 4 G
-  zramSwap = { memoryPercent = lib.mkDefault 100; };
+  zramSwap = { memoryPercent = lib.mkForce 100; };
 
   # You can test your configuration by running: nix-shell -p libva-utils --run vainfo
   # Force intel-vaapi-driver
-  # environment.sessionVariables = { LIBVA_DRIVER_NAME = "i965"; };
+  environment.sessionVariables = { LIBVA_DRIVER_NAME = "i965"; };
 }

@@ -11,7 +11,7 @@
 
   # intel i5-8259U - Coffee Lake - Q2'18 - Intel Iris Plus Graphics 655 - 8th Generation
   # ram 32 G
-  zramSwap = { memoryPercent = lib.mkDefault 25; };
+  zramSwap = { memoryPercent = lib.mkForce 25; };
 
   # You can test your configuration by running: nix-shell -p libva-utils --run vainfo
   #hardware.opengl.extraPackages = [
@@ -19,7 +19,7 @@
   #];
 
   # Force intel-media-driver
-  # environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; };
+  environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; };
 
   # Linux thermal daemon monitors and controls temperature in laptops, 
   # tablets PC with the latest Intel sandy bridge (Q3'11 2nd generation) and latest Intel CPU releases.

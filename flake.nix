@@ -70,6 +70,7 @@
         modules = [
           # lanzaboote.nixosModules.lanzaboote
           # ./modules/secureboot
+          nixos-hardware.nixosModules.common-cpu-intel
           ./hosts/acer-v3
         
           home-manager.nixosModules.home-manager

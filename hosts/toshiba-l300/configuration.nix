@@ -143,7 +143,11 @@
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
-  services.fstrim.enable = true;
+  services.fstrim = {
+    enable = true;
+    interval = "weekly"; # the default
+  };
+
   services.flatpak.enable = true;
   
   # xdg desktop integration

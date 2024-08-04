@@ -130,7 +130,11 @@
   # };
 
   # List services that you want to enable:
-  services.fstrim.enable = true;
+  services.fstrim = {
+    enable = true;
+    interval = "weekly"; # the default
+  };
+
   services.flatpak.enable = true;
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;

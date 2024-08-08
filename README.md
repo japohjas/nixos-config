@@ -56,7 +56,10 @@ toshiba-l300  (Intel 585, ram 4G)
   environment.variables.EDITOR = "vim";
 
   # Enable services. E.g
-  services.fstrim.enable = true;
+  services.fstrim = {
+    enable = true;
+    interval = "weekly"; # the default
+  };
   services.flatpak.enable = true;
   # ......
 }

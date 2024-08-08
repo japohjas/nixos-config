@@ -11,7 +11,7 @@
 
   # intel i5-8259U - Coffee Lake - Q2'18 - Intel Iris Plus Graphics 655 - 8th Generation
   # ram 32 G
-  zramSwap = { memoryPercent = lib.mkForce 25; };
+  # zramSwap = { memoryPercent = lib.mkForce 25; };
 
   # You can test your configuration by running: nix-shell -p libva-utils --run vainfo
   #hardware.opengl.extraPackages = [

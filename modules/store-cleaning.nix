@@ -13,5 +13,9 @@
   nix.settings.auto-optimise-store = true;
 
   # remove nix-channel related tools & configs, we use flakes instead.
+  # nix.channel.enable = true;
+  # warning: /root/.nix-defexpr/channels exists, but channels have been disabled.
+  # warning: /nix/var/nix/profiles/per-user/root/channels exists, but channels have been disabled.
+  # warning: /root/.nix-defexpr/channels exists, but channels have been disabled.
   # nix.channel.enable = false;
 }

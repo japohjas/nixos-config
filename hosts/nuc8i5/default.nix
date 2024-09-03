@@ -26,4 +26,8 @@
   # Once the system temperature reaches a certain threshold,
   # the Linux daemon activates various cooling methods to try to cool the system.
   services.thermald.enable = lib.mkDefault true;
+
+  # Allows for updating firmware via `fwupdmgr`.
+  # $ fwupdmgr get-devices
+  services.fwupd.enable = true;
 }

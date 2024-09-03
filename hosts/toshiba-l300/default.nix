@@ -16,4 +16,8 @@
   # You can test your configuration by running: nix-shell -p libva-utils --run vainfo
   # Force intel-vaapi-driver - switch to nixos-hardware.nixosModules.common-cpu-intel
   # environment.sessionVariables = { LIBVA_DRIVER_NAME = "i965"; };
+
+  # Allows for updating firmware via `fwupdmgr`.
+  # $ fwupdmgr get-devices
+  services.fwupd.enable = true;
 }

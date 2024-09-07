@@ -29,5 +29,5 @@
 
   # Allows for updating firmware via `fwupdmgr`.
   # $ fwupdmgr get-devices
-  # services.fwupd.enable = true;
+  services.fwupd.enable = true;
 }

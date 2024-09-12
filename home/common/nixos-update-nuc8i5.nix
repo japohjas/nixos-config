@@ -1,7 +1,7 @@
 { config, ... }:
 
 {
-  home.file.".nixos-update" = {
+  home.file.".nixos-update-nuc8i5" = {
     text = ''
       # Päivitys tehdään vscode:lla sekä synkronoiti githubiin muita koneita varten.
       echo "nuc8i5 NixOS full päivitys käynnistetty..."

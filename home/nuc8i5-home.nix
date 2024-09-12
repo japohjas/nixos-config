@@ -7,9 +7,9 @@
     ./programs/pkgs-photo.nix
     ./programs/conky
     ./programs/celluloid
-    ./common/nixos-update.nix
-    ./common/nixos-update-github.nix
-    ./common/nixos-flake-update.nix
+    ./common/nixos-update-nuc8i5.nix
+    # ./common/nixos-update-github.nix
+    # ./common/nixos-flake-update.nix
   ];
 
   home.username = "jari";

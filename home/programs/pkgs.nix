@@ -29,7 +29,7 @@
     papirus-icon-theme
   ];
 
-  # flatpak apps
+  # flatpak apps:
   #
   # org.videolan.VLC # vaapi toimii, nixos paketissa ei toimi
   # org.kde.kaffeine 
@@ -38,8 +38,12 @@
   # org.libreoffice.LibreOffice
   # org.libreoffice.LibreOffice.BundledExtension.Voikko
   #
-  # com.google.Chrome
+  # com.google.Chrome, Brave
   # org.keepassxc.KeePassXC
   #
   # com.visualstudio.code
+  #
+  # digikam, gimp, rawtherapee
+  #
+  # Flatseal
 }

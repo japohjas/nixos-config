@@ -1,13 +1,13 @@
 { pkgs, ... }: 
 
 # Siirretty flathubiin:
-# digikam, gimp, rawtherapee
+# gimp, rawtherapee
 {
-  home.packages = with pkgs; [ 
-    gimp-with-plugins
+  home.packages = with pkgs; [
     gthumb
     digikam
     exiftool
-    rawtherapee
+    # gimp-with-plugins
+    # rawtherapee
   ];
 }

@@ -4,7 +4,7 @@
   imports = [
     ./programs/pkgs.nix
     ./programs/pkgs-gnome.nix
-    # ./programs/pkgs-photo.nix # to flathub
+    ./programs/pkgs-photo.nix
     ./programs/conky
     ./programs/celluloid
     ./common/nixos-update-nuc8i5.nix

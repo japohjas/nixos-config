@@ -5,5 +5,6 @@
     gnome.gnome-tweaks  # theming
     gnomeExtensions.dash-to-panel
     gnomeExtensions.arcmenu
+    gnomeExtensions.caffeine
   ];
 }

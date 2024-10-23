@@ -6,6 +6,6 @@
     gnomeExtensions.dash-to-panel
     gnomeExtensions.arcmenu
     gnomeExtensions.caffeine
-    gnomeExtensions.brightness-control-using-ddcutil
+    # gnomeExtensions.brightness-control-using-ddcutil, ei toimi ulkoisella näytöllä
   ];
 }

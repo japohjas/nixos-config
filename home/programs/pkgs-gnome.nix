@@ -6,5 +6,6 @@
     gnomeExtensions.dash-to-panel
     gnomeExtensions.arcmenu
     gnomeExtensions.caffeine
+    gnomeExtensions.brightness-control-using-ddcutil
   ];
 }

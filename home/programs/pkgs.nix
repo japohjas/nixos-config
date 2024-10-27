@@ -27,6 +27,8 @@
     # font-awesome      # Icons
 
     papirus-icon-theme
+
+    mediawriter # Fedora mediawriter
   ];
 
   # flatpak apps:

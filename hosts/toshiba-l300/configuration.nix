@@ -28,7 +28,19 @@
 
   boot.loader.grub.enableCryptodisk=true;
 
-  boot.initrd.luks.devices."luks-a1793dfa-3022-48e7-b360-d3bae2b02d87".keyFile = "/crypto_keyfile.bin";
+  boot.initrd.luks.devices."luks-a1793dfa-3022-48e7-b360-d3bae2b02d87" = {
+    keyFile = "/crypto_keyfile.bin";
+
+    # whether to allow TRIM requests to the underlying device.
+    # it's less secure, but faster.
+    # https://github.com/ryan4yin/nix-config/blob/main/hosts/12kingdoms-shoukei/hardware-configuration.nix
+    allowDiscards = true;
+    # Whether to bypass dm-crypt’s internal read and write workqueues.
+    # Enabling this should improve performance on SSDs;
+    # https://wiki.archlinux.org/index.php/Dm-crypt/Specialties#Disable_workqueue_for_increased_solid_state_drive_(SSD)_performance
+    bypassWorkqueues = true;
+  };
+
   networking.hostName = "toshiba-l300"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 

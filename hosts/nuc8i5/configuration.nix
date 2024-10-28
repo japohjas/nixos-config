@@ -20,6 +20,10 @@
   boot.loader.systemd-boot.configurationLimit = 5;
   boot.loader.timeout = 3;
 
+  # whether to allow TRIM requests to the underlying device.
+  # it's less secure, but faster.
+  boot.initrd.luks.devices."luks-3594c38a-044d-4a3c-96fe-96437a3deb88".allowDiscards = true;
+
   networking.hostName = "nuc8i5"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 

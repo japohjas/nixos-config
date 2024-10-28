@@ -19,6 +19,12 @@
     };
 
   boot.initrd.luks.devices."luks-3594c38a-044d-4a3c-96fe-96437a3deb88".device = "/dev/disk/by-uuid/3594c38a-044d-4a3c-96fe-96437a3deb88";
+  #  boot.initrd.luks.devices.<name>.allowDiscards = true;
+
+  #  boot.initrd.luks.devices."luks-3594c38a-044d-4a3c-96fe-96437a3deb88" = {
+  #    device = "/dev/disk/by-uuid/3594c38a-044d-4a3c-96fe-96437a3deb88";
+  #    allowDiscards = true;
+  #  }; 
 
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/301E-62F3";

@@ -7,5 +7,7 @@
     gnomeExtensions.arcmenu
     gnomeExtensions.caffeine
     gnomeExtensions.workspaces-indicator-by-open-apps
+    gnomeExtensions.space-bar
+    gnomeExtensions.blur-my-shell
   ];
 }

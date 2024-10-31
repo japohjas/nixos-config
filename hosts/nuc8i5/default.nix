@@ -7,7 +7,6 @@
       ../../modules/zram.nix
       ../../modules/store-cleaning.nix
       ../../modules/second-hd-nuc8i5.nix
-      ../../modules/gnome-extensions.nix
     ];
 
   # intel i5-8259U - Coffee Lake - Q2'18 - Intel Iris Plus Graphics 655 - 8th Generation

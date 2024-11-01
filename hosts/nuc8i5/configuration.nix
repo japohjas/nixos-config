@@ -104,13 +104,14 @@
   # services.xserver.libinput.enable = true;
 
   # gnomeExtensions.brightness-control-using-ddcutil
-  hardware.i2c.enable = true;
+  # hardware.i2c.enable = true;
+  # add to extraGroups = [ "networkmanager" "wheel" "i2c" ]
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jari = {
     isNormalUser = true;
     description = "Jari P";
-    extraGroups = [ "networkmanager" "wheel" "i2c" ];
+    extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     #  thunderbird
     ];
@@ -133,19 +134,6 @@
     git
     curl
     sbctl	# lanzaboote. To create Secure Boot keys.
-
-    # gnomeExtensions.dash-to-dock
-    # gnomeExtensions.gsconnect
-    # gnomeExtensions.mpris-indicator-button
-    gnome.gnome-tweaks  # theming
-    gnomeExtensions.dash-to-panel
-    gnomeExtensions.arcmenu
-    gnomeExtensions.caffeine
-    gnomeExtensions.workspaces-indicator-by-open-apps
-    gnomeExtensions.space-bar
-    gnomeExtensions.blur-my-shell
-    gnomeExtensions.brightness-control-using-ddcutil
-    ddcutil
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

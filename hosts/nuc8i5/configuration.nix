@@ -103,11 +103,14 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
+  # gnomeExtensions.brightness-control-using-ddcutil
+  hardware.i2c.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jari = {
     isNormalUser = true;
     description = "Jari P";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "i2c" ];
     packages = with pkgs; [
     #  thunderbird
     ];
@@ -141,6 +144,8 @@
     gnomeExtensions.workspaces-indicator-by-open-apps
     gnomeExtensions.space-bar
     gnomeExtensions.blur-my-shell
+    gnomeExtensions.brightness-control-using-ddcutil
+    ddcutil
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

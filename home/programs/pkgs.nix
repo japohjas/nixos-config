@@ -6,7 +6,7 @@
     nnn      	# terminal file manager
     w_scan    # vlc, w_scan -ft -c fi -L > dvb.xspf
     libreelec-dvb-firmware
-    ffmpeg-full
+    ffmpeg
     pipx      # pipx install yle-dl
     btop      # replacement of htop/nmon
     

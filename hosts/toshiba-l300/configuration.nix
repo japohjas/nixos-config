@@ -26,7 +26,7 @@
     "/crypto_keyfile.bin" = null;
   };
 
-  boot.loader.grub.enableCryptodisk=true;
+  boot.loader.grub.enableCryptodisk = true;
 
   boot.initrd.luks.devices."luks-a1793dfa-3022-48e7-b360-d3bae2b02d87" = {
     keyFile = "/crypto_keyfile.bin";
@@ -73,8 +73,13 @@
   services.xserver.enable = true;
 
   # Enable the XFCE Desktop Environment.
-  services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.desktopManager.xfce.enable = true;
+  # services.xserver.displayManager.lightdm.enable = true;
+  # services.xserver.desktopManager.xfce.enable = true;
+
+  # Enable KDE Plasma 6
+  services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
+  services.desktopManager.plasma6.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -134,10 +139,10 @@
     curl
     git
 
-    gnome.gnome-keyring # store secrets, passwords, keys, certificates and make them available to applications
-    xfce.xfce4-whiskermenu-plugin
-    xfce.xfce4-pulseaudio-plugin
-    pavucontrol # PulseAudio Volume Control
+    # gnome.gnome-keyring # store secrets, passwords, keys, certificates and make them available to applications
+    # xfce.xfce4-whiskermenu-plugin
+    # xfce.xfce4-pulseaudio-plugin
+    # pavucontrol # PulseAudio Volume Control
   ];
 
   # Set the default editor to vim
@@ -164,16 +169,16 @@
   
   # xdg desktop integration
   # A portal frontend service for Flatpak and other desktop containment frameworks.
-  xdg = {
-    portal = {
-      enable = true;
-      extraPortals = with pkgs; [
-        xdg-desktop-portal-gtk
-        xdg-desktop-portal-wlr
-      ];
-      config.common.default = "gtk";
-    };
-  };
+  # xdg = {
+  #   portal = {
+  #     enable = true;
+  #     extraPortals = with pkgs; [
+  #       xdg-desktop-portal-gtk
+  #       xdg-desktop-portal-wlr
+  #     ];
+  #     config.common.default = "gtk";
+  #   };
+  # };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

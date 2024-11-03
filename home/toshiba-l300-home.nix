@@ -3,9 +3,9 @@
 {
   imports = [
     ./programs/pkgs.nix
-    ./programs/pkgs-xfce.nix
-    ./programs/conky
-    ./programs/gammastep
+    # ./programs/pkgs-xfce.nix
+    # ./programs/conky
+    # ./programs/gammastep
     # ./programs/celluloid
     ./common/nixos-update.nix
     ./common/nixos-update-github.nix
@@ -33,42 +33,42 @@
   # xfce calendar
   # calendar:indeterminate {color: gray; }
   # calendar.highlight { backg round-color: gray; }
-  home.file.".config/gtk-3.0/gtk.css" = {
-    text = ''
-      calendar { font.size: 18pt; padding: 5px; margin: 5px; }
-    '';
-    recursive = true;
-  };
+  # home.file.".config/gtk-3.0/gtk.css" = {
+  #   text = ''
+  #     calendar { font.size: 18pt; padding: 5px; margin: 5px; }
+  #   '';
+  #   recursive = true;
+  # };
 
-  home.packages = [
-    pkgs.celluloid
-  ];
+  # home.packages = [
+  #   pkgs.celluloid
+  # ];
 
   # mpv.conf to x11
-  home.file.".config/mpv/mpv.conf" = {
-    text = ''
-      hwdec=auto
-      slang=fin,en
-      alang=fin,en
-      save-position-on-quit
-      [big-cache]
-      cache=yes
-      demuxer-max-bytes=512MiB
-      demuxer-readahead-secs=20
-    '';
-    recursive = true;
-  };
+  # home.file.".config/mpv/mpv.conf" = {
+  #   text = ''
+  #     hwdec=auto
+  #     slang=fin,en
+  #     alang=fin,en
+  #     save-position-on-quit
+  #     [big-cache]
+  #     cache=yes
+  #     demuxer-max-bytes=512MiB
+  #     demuxer-readahead-secs=20
+  #   '';
+  #   recursive = true;
+  # };
 
-  home.file.".config/mpv/input.conf" = {
-    text = ''
-      MOUSE_BTN3	add speed +0.1
-      MOUSE_BTN4	add speed -0.1
-
-      UP	  add volume 5
-      DOWN	add volume -5
-    '';
-    recursive = true;
-  };
+  # home.file.".config/mpv/input.conf" = {
+  #   text = ''
+  #     MOUSE_BTN3	add speed +0.1
+  #     MOUSE_BTN4	add speed -0.1
+  # 
+  #     UP	  add volume 5
+  #     DOWN	add volume -5
+  #   '';
+  #   recursive = true;
+  # };
 
   # You can update home Manager without changing this value. See
   # the home Manager release notes for a list of state version

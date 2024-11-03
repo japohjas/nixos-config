@@ -5,7 +5,7 @@
     ./programs/pkgs.nix
     ./programs/pkgs-photo.nix
     ./programs/pkgs-gnome-extra.nix
-    ./programs/conky
+    # ./programs/conky
     ./programs/celluloid
     ./common/nixos-update-nuc8i5.nix
     # ./common/nixos-update-github.nix

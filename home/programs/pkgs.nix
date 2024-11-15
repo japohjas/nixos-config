@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [ 
-    neofetch
+    fastfetch
     nnn      	# terminal file manager
     w_scan    # vlc, w_scan -ft -c fi -L > dvb.xspf
     libreelec-dvb-firmware

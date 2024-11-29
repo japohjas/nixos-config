@@ -134,7 +134,6 @@
     git
     curl
     sbctl	# lanzaboote. To create Secure Boot keys.
-    fwupd # sw update
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -152,6 +151,9 @@
   };
 
   services.flatpak.enable = true;
+
+  # https://nixos.wiki/wiki/Fwupd
+  services.fwupd.enable = true;
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 

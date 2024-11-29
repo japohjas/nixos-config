@@ -134,6 +134,7 @@
     git
     curl
     sbctl	# lanzaboote. To create Secure Boot keys.
+    fwupd # sw update
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

@@ -153,7 +153,10 @@
   services.flatpak.enable = true;
 
   # https://nixos.wiki/wiki/Fwupd
+  # fwupd is a simple daemon to allow session software to update device firmware on your local machine.
   services.fwupd.enable = true;
+  services.udisks2.enable = true;
+
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 

@@ -5,7 +5,7 @@
     # gnomeExtensions.dash-to-dock
     # gnomeExtensions.gsconnect
     # gnomeExtensions.mpris-indicator-button
-    gnome.gnome-tweaks  # theming
+    # gnome.gnome-tweaks  # theming
     gnomeExtensions.dash-to-panel
     gnomeExtensions.dash-to-dock
     gnomeExtensions.arcmenu

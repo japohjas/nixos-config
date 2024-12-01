@@ -1,6 +1,6 @@
 { pkgs, ... }:
 
-# not used - switch to nixos-hardware.nixosModules.common-cpu-intel
+# not used - switch to nixos-hardware.nixosModules.common-cpu-intel.
 
 {
   boot.initrd.kernelModules = [ "i915" ];

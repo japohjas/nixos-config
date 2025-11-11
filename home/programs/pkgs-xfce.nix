@@ -2,11 +2,11 @@
 
 {
   home.packages = with pkgs; [ 
-    gnome.gnome-disk-utility
-    gnome.gnome-calculator
+    gnome-disk-utility
+    mate.mate-calc
 
-    cinnamon.xreader # a PDF viewer
-    cinnamon.pix # a photo organization application based on gThumb
+    # mate.atril # a PDF viewer
+    # xfce.ristretto # Fast and lightweight picture-viewer
     # cinnamon.xviewer # an image viewer based on Eye of GNOME
     # xed-editor # a text editor
   ];

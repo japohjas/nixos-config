@@ -159,6 +159,7 @@
     interval = "weekly"; # the default
   };
 
+  xdg.portal.enable = true;
   services.flatpak.enable = true;
 
   # https://nixos.wiki/wiki/Fwupd

@@ -143,6 +143,8 @@
     git
     curl
     sbctl	# lanzaboote. To create Secure Boot keys.
+    vivaldi
+    vivaldi-ffmpeg-codecs
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

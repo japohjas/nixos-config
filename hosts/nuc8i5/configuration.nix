@@ -145,6 +145,7 @@
     sbctl	# lanzaboote. To create Secure Boot keys.
     vivaldi
     vivaldi-ffmpeg-codecs
+    gnome-keyring
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

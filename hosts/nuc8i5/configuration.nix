@@ -143,7 +143,6 @@
     git
     curl
     sbctl	# lanzaboote. To create Secure Boot keys.
-    xdg-desktop-portal
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -160,6 +159,11 @@
     interval = "weekly"; # the default
   };
 
+  xdg.portal = {
+    enable = true;
+    xdgOpenUsePortal = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  };
   services.flatpak.enable = true;
 
   # https://nixos.wiki/wiki/Fwupd

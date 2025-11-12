@@ -147,6 +147,7 @@
     vivaldi-ffmpeg-codecs
     gnome-keyring
     corefonts
+    onboard
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

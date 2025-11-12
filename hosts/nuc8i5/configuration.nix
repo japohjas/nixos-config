@@ -146,7 +146,7 @@
     vivaldi
     vivaldi-ffmpeg-codecs
     gnome-keyring
-    corefonts
+    # corefonts
     onboard
   ];
 
